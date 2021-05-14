@@ -1,0 +1,12 @@
+lockfileVersion: 5.3
+
+importers:
+
+  packages/example-package:
+    specifiers:
+      helm3-cli: '*'
+    devDependencies:
+      helm3-cli: link:../helm3-cli
+
+  packages/helm3-cli:
+    specifiers: {}

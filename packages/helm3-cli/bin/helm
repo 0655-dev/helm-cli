@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+#
+# turn this on to debug script
+# set -x
+
+#
+# abort on error
+# https://sipb.mit.edu/doc/safe-shell/
+set -euf -o pipefail
+
+HELM_OSX="helm-v3.5.4-darwin-amd64"
+HELM_LINUX="helm-v3.5.4-linux-amd64"
+
+if [ "$(uname)" == "Darwin" ]; then
+	npx $HELM_OSX $@
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+	npx $HELM_LINUX $@
+else
+  exit 1
+fi

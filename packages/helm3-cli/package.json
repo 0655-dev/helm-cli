@@ -1,0 +1,10 @@
+{
+	"name": "helm3-cli",
+	"version": "0.1.0",
+	"bin": {
+		"helm": "./bin/helm",
+		"helm-v3.5.4-linux-amd64": "./bin/builds/helm-v3.5.4-linux-amd64/helm",
+		"helm-v3.5.4-darwin-amd64": "./bin/builds/helm-v3.5.4-darwin-amd64/helm"
+	},
+	"license": "MIT"
+}

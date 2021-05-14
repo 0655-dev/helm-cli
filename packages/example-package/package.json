@@ -1,0 +1,10 @@
+{
+	"name": "example-package",
+	"private": true,
+	"devDependencies": {
+		"helm3-cli": "*"
+	},
+	"scripts": {
+		"test": "pnpx helm lint ./src"
+	}
+}
